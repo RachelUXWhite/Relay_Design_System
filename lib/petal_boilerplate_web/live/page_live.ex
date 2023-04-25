@@ -47,37 +47,37 @@ defmodule PetalBoilerplateWeb.PageLive do
 
       <.h2 underline class="mt-10" label="Modal" />
 
-      <.button label="sm" link_type="live_patch" to={~p"/live/modal/sm"} />
-      <.button label="md" link_type="live_patch" to={~p"/live/modal/md"} />
-      <.button label="lg" link_type="live_patch" to={~p"/live/modal/lg"} />
-      <.button label="xl" link_type="live_patch" to={~p"/live/modal/xl"} />
-      <.button label="2xl" link_type="live_patch" to={~p"/live/modal/2xl"} />
-      <.button label="full" link_type="live_patch" to={~p"/live/modal/full"} />
+      <.phx_button label="sm" link_type="live_patch" to={~p"/live/modal/sm"} />
+      <.phx_button label="md" link_type="live_patch" to={~p"/live/modal/md"} />
+      <.phx_button label="lg" link_type="live_patch" to={~p"/live/modal/lg"} />
+      <.phx_button label="xl" link_type="live_patch" to={~p"/live/modal/xl"} />
+      <.phx_button label="2xl" link_type="live_patch" to={~p"/live/modal/2xl"} />
+      <.phx_button label="full" link_type="live_patch" to={~p"/live/modal/full"} />
 
       <%= if @modal do %>
-        <.modal max_width={@modal} title="Modal">
+        <.phx_modal max_width={@modal} title="Modal">
           <div class="gap-5 text-sm">
             <.form_label label="Add some text here." />
             <div class="flex justify-end">
-              <.button label="close" phx-click={PetalComponents.Modal.hide_modal()} />
+              <.phx_button label="close" phx-click={PetalComponents.phx_modal.hide_modal()} />
             </div>
           </div>
-        </.modal>
+        </.phx_modal>
       <% end %>
 
       <.h2 underline class="mt-10" label="SlideOver" />
 
-      <.button label="left" link_type="live_patch" to={~p"/live/slide_over/left"} />
-      <.button label="top" link_type="live_patch" to={~p"/live/slide_over/top"} />
-      <.button label="right" link_type="live_patch" to={~p"/live/slide_over/right"} />
-      <.button label="bottom" link_type="live_patch" to={~p"/live/slide_over/bottom"} />
+      <._button label="left" link_type="live_patch" to={~p"/live/slide_over/left"} />
+      <._button label="top" link_type="live_patch" to={~p"/live/slide_over/top"} />
+      <._button label="right" link_type="live_patch" to={~p"/live/slide_over/right"} />
+      <._button label="bottom" link_type="live_patch" to={~p"/live/slide_over/bottom"} />
 
       <%= if @slide_over do %>
         <.slide_over origin={@slide_over} title="SlideOver">
           <div class="gap-5 text-sm">
             <.form_label label="Add some text here." />
             <div class="flex justify-end">
-              <.button
+              <.phx_button
                 label="close"
                 phx-click={PetalComponents.SlideOver.hide_slide_over(@slide_over)}
               />

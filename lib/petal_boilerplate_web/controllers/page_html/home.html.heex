@@ -68,79 +68,79 @@
     <.h2 underline label="Buttons" />
     <.h5 label="Types" />
     <div class="flex flex-wrap gap-2">
-      <.button label="Button" to="/" />
-      <.button link_type="a" to="/" label="Link" />
-      <.button link_type="a" to="/" label="Link with method" method={:delete} />
-      <.button link_type="live_patch" to="/" label="Live Patch" />
-      <.button link_type="live_redirect" to="/" label="Live Redirect" />
+      <.phx_button label="Button" to="/" />
+      <.phx_button link_type="a" to="/" label="Link" />
+      <.phx_button link_type="a" to="/" label="Link with method" method={:delete} />
+      <.phx_button link_type="live_patch" to="/" label="Live Patch" />
+      <.phx_button link_type="live_redirect" to="/" label="Live Redirect" />
     </div>
   </div>
 
   <div class="mt-10">
     <.h5 label="Colors" />
     <div class="flex flex-wrap gap-2">
-      <.button color="primary" label="Primary" />
-      <.button color="secondary" label="secondary" />
-      <.button color="white" label="White" />
-      <.button color="pure_white" label="Pure White" />
-      <.button color="info" label="Info" />
-      <.button color="success" label="Success" />
-      <.button color="warning" label="Warning" />
-      <.button color="danger" label="Danger" />
-      <.button color="gray" label="Gray" />
+      <.phx_button color="primary" label="Primary" />
+      <.phx_button color="secondary" label="secondary" />
+      <.phx_button color="white" label="White" />
+      <.phx_button color="pure_white" label="Pure White" />
+      <.phx_button color="info" label="Info" />
+      <.phx_button color="success" label="Success" />
+      <.phx_button color="warning" label="Warning" />
+      <.phx_button color="danger" label="Danger" />
+      <.phx_button color="gray" label="Gray" />
     </div>
   </div>
 
   <div class="mt-10">
     <.h5 label="Outline" />
     <div class="flex flex-wrap gap-2">
-      <.button color="primary" label="Primary" variant="outline" />
-      <.button color="secondary" label="Secondary" variant="outline" />
-      <.button color="white" label="White" variant="outline" />
-      <.button color="info" label="Info" variant="outline" />
-      <.button color="success" label="Success" variant="outline" />
-      <.button color="warning" label="Warning" variant="outline" />
-      <.button color="danger" label="Danger" variant="outline" />
-      <.button color="gray" label="Gray" variant="outline" />
+      <.phx_button color="primary" label="Primary" variant="outline" />
+      <.phx_button color="secondary" label="Secondary" variant="outline" />
+      <.phx_button color="white" label="White" variant="outline" />
+      <.phx_button color="info" label="Info" variant="outline" />
+      <.phx_button color="success" label="Success" variant="outline" />
+      <.phx_button color="warning" label="Warning" variant="outline" />
+      <.phx_button color="danger" label="Danger" variant="outline" />
+      <.phx_button color="gray" label="Gray" variant="outline" />
     </div>
   </div>
 
   <div class="mt-10">
     <.h5 label="Inverted" />
     <div class="flex flex-wrap gap-2">
-      <.button color="primary" label="Primary" variant="inverted" />
-      <.button color="secondary" label="Secondary" variant="inverted" />
-      <.button color="white" label="White" variant="inverted" />
-      <.button color="info" label="Info" variant="inverted" />
-      <.button color="success" label="Success" variant="inverted" />
-      <.button color="warning" label="Warning" variant="inverted" />
-      <.button color="danger" label="Danger" variant="inverted" />
-      <.button color="gray" label="Gray" variant="inverted" />
+      <.phx_button color="primary" label="Primary" variant="inverted" />
+      <.phx_button color="secondary" label="Secondary" variant="inverted" />
+      <.phx_button color="white" label="White" variant="inverted" />
+      <.phx_button color="info" label="Info" variant="inverted" />
+      <.phx_button color="success" label="Success" variant="inverted" />
+      <.phx_button color="warning" label="Warning" variant="inverted" />
+      <.phx_button color="danger" label="Danger" variant="inverted" />
+      <.phx_button color="gray" label="Gray" variant="inverted" />
     </div>
   </div>
 
   <div class="mt-10">
     <.h5 label="Shadow" />
     <div class="flex flex-wrap gap-2">
-      <.button color="primary" label="Primary" variant="shadow" />
-      <.button color="secondary" label="Secondary" variant="shadow" />
-      <.button color="white" label="White" variant="shadow" />
-      <.button color="info" label="Info" variant="shadow" />
-      <.button color="success" label="Success" variant="shadow" />
-      <.button color="warning" label="Warning" variant="shadow" />
-      <.button color="danger" label="Danger" variant="shadow" />
-      <.button color="gray" label="Gray" variant="shadow" />
+      <.phx_button color="primary" label="Primary" variant="shadow" />
+      <.phx_button color="secondary" label="Secondary" variant="shadow" />
+      <.phx_button color="white" label="White" variant="shadow" />
+      <.phx_button color="info" label="Info" variant="shadow" />
+      <.phx_button color="success" label="Success" variant="shadow" />
+      <.phx_button color="warning" label="Warning" variant="shadow" />
+      <.phx_button color="danger" label="Danger" variant="shadow" />
+      <.phx_button color="gray" label="Gray" variant="shadow" />
     </div>
   </div>
 
   <div class="mt-10">
     <.h5 label="Sizes" />
     <div class="flex flex-wrap items-end gap-2">
-      <.button size="xs" label="xs" />
-      <.button size="sm" label="sm" />
-      <.button size="md" label="md" />
-      <.button size="lg" label="lg" />
-      <.button size="xl" label="xl" />
+      <.phx_button size="xs" label="xs" />
+      <.phx_button size="sm" label="sm" />
+      <.phx_button size="md" label="md" />
+      <.phx_button size="lg" label="lg" />
+      <.phx_button size="xl" label="xl" />
     </div>
   </div>
 
@@ -150,34 +150,34 @@
       <.form_label label="Disabled" />
     </div>
     <div class="flex flex-wrap items-end gap-2 mt-2">
-      <.button disabled size="xs" to="/" label="Disabled xs" />
-      <.button disabled size="sm" to="/" label="Disabled sm" />
-      <.button disabled size="md" to="/" label="Disabled md" />
-      <.button disabled size="lg" to="/" label="Disabled lg" />
-      <.button disabled size="xl" to="/" label="Disabled xl" />
+      <.phx_button disabled size="xs" to="/" label="Disabled xs" />
+      <.phx_button disabled size="sm" to="/" label="Disabled sm" />
+      <.phx_button disabled size="md" to="/" label="Disabled md" />
+      <.phx_button disabled size="lg" to="/" label="Disabled lg" />
+      <.phx_button disabled size="xl" to="/" label="Disabled xl" />
     </div>
     <div class="mt-5">
       <.form_label label="Loading" />
     </div>
     <div class="flex flex-wrap items-end gap-2 mt-2">
-      <.button loading size="xs" label="Loading xs" />
-      <.button loading size="sm" label="Loading sm" />
-      <.button loading size="md" label="Loading md" />
-      <.button loading size="lg" label="Loading lg" />
-      <.button loading size="xl" label="Loading xl" />
+      <.phx_button loading size="xs" label="Loading xs" />
+      <.phx_button loading size="sm" label="Loading sm" />
+      <.phx_button loading size="md" label="Loading md" />
+      <.phx_button loading size="lg" label="Loading lg" />
+      <.phx_button loading size="xl" label="Loading xl" />
     </div>
   </div>
 
   <div class="mt-10">
     <.h5 label="Button with icon" />
     <div class="flex flex-wrap items-end gap-2">
-      <.button icon={:home} label="Home" />
-      <.button with_icon link_type="a" to="/">
+      <.phx_button icon={:home} label="Home" />
+      <.phx_button with_icon link_type="a" to="/">
         <Heroicons.home solid class="w-5 h-5" /> Home
-      </.button>
-      <.button with_icon link_type="a" to="/">
+      </.phx_button>
+      <.phx_button with_icon link_type="a" to="/">
         <Heroicons.home class="w-5 h-5" /> Home
-      </.button>
+      </.phx_button>
     </div>
   </div>
 
@@ -1263,9 +1263,9 @@
       </.card_content>
 
       <.card_footer>
-        <.button to="/" label="View">
+        <.phx_button to="/" label="View">
           <Heroicons.eye solid class="w-4 h-4 mr-2" />View
-        </.button>
+        </.phx_button>
       </.card_footer>
     </.card>
 
@@ -1277,9 +1277,9 @@
       </.card_content>
 
       <.card_footer>
-        <.button to="/" label="View">
+        <.phx_button to="/" label="View">
           <Heroicons.eye solid class="w-4 h-4 mr-2" />View
-        </.button>
+        </.phx_button>
       </.card_footer>
     </.card>
 
@@ -1291,9 +1291,9 @@
       </.card_content>
 
       <.card_footer>
-        <.button to="/" label="View">
+        <.phx_button to="/" label="View">
           <Heroicons.eye solid class="w-4 h-4 mr-2" />View
-        </.button>
+        </.phx_button>
       </.card_footer>
     </.card>
   </div>
@@ -1303,7 +1303,7 @@
   <.h2 underline label="Table" />
   <.h5 label="Basic table" />
   <div class="p-1 mt-5 overflow-auto">
-    <.table>
+    <.phx_table>
       <thead>
         <.tr>
           <.th>Name</.th>
@@ -1344,12 +1344,12 @@
           <.td>sarah.hill@example.com</.td>
         </.tr>
       </tbody>
-    </.table>
+    </.phx_table>
   </div>
 
   <.h5 class="mt-10" label="Multi-lined table with avatars and badges" />
   <div class="p-1 mt-5 overflow-auto">
-    <.table>
+    <.phx_table>
       <.tr>
         <.th>Name</.th>
         <.th>Title</.th>
@@ -1450,7 +1450,7 @@
           <.a to="/" label="Edit" class="text-primary-600 dark:text-primary-400" />
         </.td>
       </.tr>
-    </.table>
+    </.phx_table>
   </div>
 </.container>
 

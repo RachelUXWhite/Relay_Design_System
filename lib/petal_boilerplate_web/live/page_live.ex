@@ -67,8 +67,8 @@ defmodule PetalBoilerplateWeb.PageLive do
 
       <.h2 underline class="mt-10" label="SlideOver" />
 
-      <._button label="left" link_type="live_patch" to={~p"/live/slide_over/left"} />
-      <._button label="top" link_type="live_patch" to={~p"/live/slide_over/top"} />
+      <.phx_button label="left" link_type="live_patch" to={~p"/live/slide_over/left"} />
+      <.phx__button label="top" link_type="live_patch" to={~p"/live/slide_over/top"} />
       <._button label="right" link_type="live_patch" to={~p"/live/slide_over/right"} />
       <._button label="bottom" link_type="live_patch" to={~p"/live/slide_over/bottom"} />
 

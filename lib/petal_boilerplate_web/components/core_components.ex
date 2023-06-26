@@ -19,20 +19,20 @@ defmodule PetalBoilerplateWeb.CoreComponents do
 
   ## Examples
 
-      <.modal id="confirm-modal">
+      <.phx_modal id="confirm-modal">
         Are you sure?
         <:confirm>OK</:confirm>
         <:cancel>Cancel</:cancel>
-      </.modal>
+      </.phx_modal>
 
   JS commands may be passed to the `:on_cancel` and `on_confirm` attributes
   for the caller to react to each button press, for example:
 
-      <.modal id="confirm" on_confirm={JS.push("delete")} on_cancel={JS.navigate(~p"/posts")}>
+      <.phx_modal id="confirm" on_confirm={JS.push("delete")} on_cancel={JS.navigate(~p"/posts")}>
         Are you sure you?
         <:confirm>OK</:confirm>
         <:cancel>Cancel</:cancel>
-      </.modal>
+      </.phx_modal>
   """
   attr :id, :string, required: true
   attr :show, :boolean, default: false
@@ -210,7 +210,7 @@ defmodule PetalBoilerplateWeb.CoreComponents do
         <.input field={@form[:email]} label="Email"/>
         <.input field={@form[:username]} label="Username" />
         <:actions>
-          <.button>Save</.button>
+          <.phx_button>Save</.phx_button>
         </:actions>
       </.simple_form>
   """
@@ -242,8 +242,8 @@ defmodule PetalBoilerplateWeb.CoreComponents do
 
   ## Examples
 
-      <.button>Send!</.button>
-      <.button phx-click="go" class="ml-2">Send!</.button>
+      <.phx_button>Send!</.phx_button>
+      <.phx_button phx-click="go" class="ml-2">Send!</.phx_button>
   """
   attr :type, :string, default: nil
   attr :class, :string, default: nil
@@ -455,10 +455,10 @@ defmodule PetalBoilerplateWeb.CoreComponents do
 
   ## Examples
 
-      <.table id="users" rows={@users}>
+      <.phx_table id="users" rows={@users}>
         <:col :let={user} label="id"><%= user.id %></:col>
         <:col :let={user} label="username"><%= user.username %></:col>
-      </.table>
+      </.phx_table>
   """
   attr :id, :string, required: true
   attr :rows, :list, required: true
